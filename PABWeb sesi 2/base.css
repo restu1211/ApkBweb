@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2a2f32;
+    color: #ffffff;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+.app-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+/* bar icon */
+.nav-sidebar {
+    width: 5%;
+    background-color: #2a2f32;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+/* Sidebar (Daftar Chat) */
+.main-sidebar {
+    width: 30%;
+    background-color: #202c33;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-header {
+    /*background-color: #3c454b;*/
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-header img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.search-sidebar {
+    padding: 10px;
+    /*background-color: #323739;*/
+}
+.search-bar {
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3c454b;
+    color: white;
+}
+.chat-list {
+    overflow-y: auto;
+    flex: 1;
+    padding: 10px;
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    /*background-color: #2a2f32;*/
+    border-bottom: 1px solid #575353;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/*.chat-item:hover, .chat-item.active {
+    background-color: #323739;*/
+
+
+.chat-avatar img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.chat-info {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.chat-info h4 {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.chat-info p {
+    color: #a8a8a8;
+}
+
+.chat-time {
+    color: #a8a8a8;
+}
+/* Konten Pesan */
+.chat-content {
+    flex: 1;
+    background-color: #0d1418;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 15px;
+    background-color: #202c33;
+    border-bottom: 1px solid #333;
+    color: #ffffff;
+}
+
+.message-area {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-image: url('https://web.whatsapp.com/img/bg-chat-tile_9bc50e65f2325a768ee02e517ee75c8d.png');
+    background-size: cover;
+}
+.message-incoming, .message-outgoing {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
